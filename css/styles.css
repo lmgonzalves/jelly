@@ -1,0 +1,50 @@
+/* General styles */
+html, body {
+  margin: 0;
+}
+
+body {
+  background-color: #D98327;
+  overflow: hidden;
+}
+
+/* Jelly styles */
+.jelly-container {
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  margin-left: -200px;
+}
+
+.jelly-container, .jelly-canvas {
+  width: 400px;
+  height: 400px;
+}
+
+/* It's important to position the `.centroid-container` in the top-left corner
+   This way the `.centroid-text` will be positioned in the center (with JavaScript) */
+.centroid-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+.centroid-text {
+  font-size: 100px;
+  color: white;
+}
+
+.description {
+  font-family: sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  margin-top: 50px;
+  padding: 0 50px;
+  color: #913023;
+  text-transform: uppercase;
+  text-align: center;
+}

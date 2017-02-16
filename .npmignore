@@ -1,0 +1,12 @@
+node_modules/
+.idea/
+css/
+scss/
+img/
+index.html
+jellyfish.html
+gulpfile.js
+jelly.svg
+js/jellyfish.js
+js/promise.min.js
+js/scripts.js

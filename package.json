@@ -1,0 +1,33 @@
+{
+  "name": "jelly.js",
+  "version": "0.0.1",
+  "description": "A library to draw and animate jelly shapes in a canvas",
+  "main": "js/jelly.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lmgonzalves/jelly.git"
+  },
+  "keywords": [
+    "javascript",
+    "canvas",
+    "jelly"
+  ],
+  "author": "lmgonzalves",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lmgonzalves/jelly/issues"
+  },
+  "homepage": "https://github.com/lmgonzalves/jelly",
+  "engine": {
+    "node": ">=0.10.22"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-insert": "^0.5.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.1",
+    "gulp-uglify": "^1.5.3"
+  }
+}

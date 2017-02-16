@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jelly</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/promise.min.js"></script>
+    <script src="js/jelly.min.js"></script>
+</head>
+<body>
+
+<div class="description">Hover the shape and/or drag it to see the jelly effect!</div>
+
+<!-- SVG with a pentagon path -->
+<!-- Note the `display: none` style, because we don't want to show the SVG, but just get the path from JavaScript -->
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="400" style="display: none">
+    <path id="pentagon-path" d="m200 97.218 108.07 78.524-41.28 127.04h-133.58l-41.281-127.04z"/>
+</svg>
+
+<div class="jelly-container">
+    <!-- Canvas to draw the jelly pentagon -->
+    <canvas class="jelly-canvas"></canvas>
+
+    <!-- Text in the centroid of the jelly pentagon -->
+    <div class="centroid-container">
+        <div class="centroid-text">S</div>
+    </div>
+</div>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
