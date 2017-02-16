@@ -2,13 +2,17 @@
 
 A library to draw and animate "jelly" shapes in a `canvas` element. It's inspired in [this pen](http://codepen.io/thomcc/pen/gzbjF) by Thom Chiovoloni, inspired as well in the game [The Floor is Jelly](http://thefloorisjelly.com/).
 
+[DEMO](https://lmgonzalves.github.io/jelly/)
+
 ## Install
 
 You can install it using `npm` or just downloading it manually.
 
 ### NPM
 
+```
 npm install jelly.js
+```
 
 ## Basic usage
 
