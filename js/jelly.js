@@ -91,8 +91,8 @@
             mouseIncidence: 40,
             maxIncidence: 40,
             maxDistance: 70,
-            dcy: 0.95,
-            pwr: 1 / 40,
+            intensity: 0.95,
+            fastness: 1 / 40,
             ent: 0.25,
             x: 0,
             y: 0
@@ -347,15 +347,15 @@
             var len = p.length;
 
             for (n = 0; n < len; n++) {
-                p[n].xs *= o.dcy;
-                p[n].ys *= o.dcy;
+                p[n].xs *= o.intensity;
+                p[n].ys *= o.intensity;
 
                 if (p[n].xs > 11 || p[n].xs < -11) {
                     p[n].xs = 11 * (p[n].xs < 0 ? -1 : 1);
                 }
 
-                p[n].xs -= (p[n].x - p[n].ox) * o.pwr;
-                p[n].ys -= (p[n].y - p[n].oy) * o.pwr;
+                p[n].xs -= (p[n].x - p[n].ox) * o.fastness;
+                p[n].ys -= (p[n].y - p[n].oy) * o.fastness;
 
                 p[n].x += p[n].xs;
                 p[n].y += p[n].ys;

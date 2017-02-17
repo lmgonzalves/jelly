@@ -62,6 +62,8 @@ Here is the complete list of options you can provide to customize the jelly shap
 |`imageCentroid`          | Boolean                 | `true`                                                               | If `true`, the image will be moved accordingly to the centroid point. |
 |`centroid`               | Element or String       | `undefined`                                                          | Element (or selector) to move accordingly to the centroid point. |
 |`debug`                  | Boolean                 | `false`                                                              | Set it `true` to see the points. |
+|`intensity`              | Float                   | `0.95`                                                               | Jelly effect intensity. Should be a value `< 1`. |
+|`fastness`               | Float                   | `1 / 40`                                                             | Jelly effect fastness. Should be a value near zero. |
 
 ## Available functions
 
