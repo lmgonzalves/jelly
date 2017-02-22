@@ -1,6 +1,6 @@
 {
   "name": "jelly.js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A library to draw and animate jelly shapes in a canvas",
   "main": "js/jelly.js",
   "repository": {
