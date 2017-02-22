@@ -3,9 +3,11 @@
 A library to draw and animate "jelly" shapes in a `canvas` element. It's inspired in [this pen](http://codepen.io/thomcc/pen/gzbjF) by Thom Chiovoloni, inspired as well in the game [The Floor is Jelly](http://thefloorisjelly.com/).
 
 [**DEMO 1 - Simple example**](https://lmgonzalves.github.io/jelly/)
+
 [**DEMO 2 - Jelly slider**](https://lmgonzalves.github.io/jelly/jellyfish.html)
 
 [**TUTORIAL 1 - Simple example**](https://scotch.io/tutorials/drawing-and-animating-jelly-shapes-with-canvas)
+
 **TUTORIAL 2 - Jelly slider** (coming soon)
 
 ## Install
