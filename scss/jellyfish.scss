@@ -1,0 +1,33 @@
+/* General styles */
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: #106CD9;
+  overflow: hidden;
+}
+
+
+/* Jelly slider */
+
+$width: 1300px;
+$height: 600px;
+
+// Setting dimensions
+.jelly-container, .jelly-canvas {
+  width: $width;
+  height: $height;
+}
+
+// Centering purpose
+.jelly-container {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: - $width / 2;
+  margin-top: - $height / 2;
+}
