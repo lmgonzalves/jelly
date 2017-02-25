@@ -78,6 +78,7 @@
     function Jelly(canvas, options) {
         this.canvas = is.str(canvas) ? document.querySelector(canvas) : canvas;
         this.ctx = this.canvas.getContext('2d');
+        this.o = [];
         this.init(is.arr(options) ? options : [options]);
     }
 
@@ -139,7 +140,6 @@
         },
 
         initOptions: function (options) {
-            this.o = [];
             var that = this;
             var svgCountDown = createCountDown(this.initJelly.bind(this));
             
@@ -464,7 +464,7 @@
 
         getHoverIndex: function () {
             for (var i = 0; i < this.o.length; i++) {
-                if (this.o[i].hover) return i;
+                if (this.o[i] && this.o[i].hover) return i;
             }
             return -1;
         }
