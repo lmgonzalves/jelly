@@ -71,6 +71,11 @@ Here is the complete list of options you can provide to customize the jelly shap
 |`intensity`              | Float                   | `0.95`                                                               | Jelly effect intensity. Should be a value `< 1`. |
 |`fastness`               | Float                   | `1 / 40`                                                             | Jelly effect fastness. Should be a value near zero. |
 
-## Available functions
+## Available functions to animate the jelly shapes
 
-Coming soon!
+| Name                    | Default options                                        | Description |
+|-------------------------|--------------------------------------------------------|-------------|
+|`hide`                   | `{i: 0, maxDelay: 0, animate: true}`                   | Hide the shape selected by the index (`i`). If `animate` is `true`, all the points of the shape will be animated, with a *random* delay `<= maxDelay`. |
+|`show`                   | `{i: 0, maxDelay: 0, animate: true}`                   | Show the shape selected by the index (`i`). If `animate` is `true`, all the points of the shape will be animated, with a *random* delay `<= maxDelay`. To show a shape, it should have been hidden previously. |
+|`morph`                  | `{i: 0, maxDelay: 0, animate: true}`                   | Morph the shape selected by the index (`i`) to another shape. You need to pass a new `paths` option (at least) with the same `pointsNumber`. If `animate` is `true`, all the points of the shape will be animated, with a *random* delay `<= maxDelay`.  |
+|`shake`                  | `{i: 0, x: 0, y: 0}`                                   | Shake the shape selected by the index (`i`), moving the points (alternately) the distance defined by `x` and `y`.
