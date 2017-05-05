@@ -8,7 +8,7 @@ A library to draw and animate "jelly" shapes in a `canvas` element. It's inspire
 
 [**TUTORIAL 1 - Simple example**](https://scotch.io/tutorials/drawing-and-animating-jelly-shapes-with-canvas)
 
-**TUTORIAL 2 - Jelly slider** (coming soon)
+[**TUTORIAL 2 - Jelly slider**](https://scotch.io/tutorials/drawing-and-animating-jelly-shapes-with-canvas-part-2)
 
 ## Install
 
