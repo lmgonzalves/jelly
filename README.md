@@ -62,7 +62,7 @@ Here is the complete list of options you can provide to customize the jelly shap
 |`pointsNumber`           | Integer                 | `10`                                                                 | Number of points to use to draw the shapes. |
 |`maxDistance`            | Float                   | `70`                                                                 | Max distance (in pixels) among points to start pulling. |
 |`mouseIncidence`         | Float                   | `40`                                                                 | Incidence of the mouse. More incidence means more reaction, and it increases proportionately to mouse speed. |
-|`mouseIncidence`         | Float                   | `40`                                                                 | Max incidence of the mouse. No matter the speed, incidence will never be greater than this value. |
+|`maxIncidence`           | Float                   | `40`                                                                 | Max incidence of the mouse. No matter the speed, incidence will never be greater than this value. |
 |`color`                  | String                  | `'#666'`                                                             | Solid color to fill the shape. |
 |`image`                  | String                  | `undefined`                                                          | Image URL to fill the shape. |
 |`imageCentroid`          | Boolean                 | `true`                                                               | If `true`, the image will be moved accordingly to the centroid point. |
