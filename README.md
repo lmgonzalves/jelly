@@ -64,6 +64,8 @@ Here is the complete list of options you can provide to customize the jelly shap
 |`mouseIncidence`         | Float                   | `40`                                                                 | Incidence of the mouse. More incidence means more reaction, and it increases proportionately to mouse speed. |
 |`maxIncidence`           | Float                   | `40`                                                                 | Max incidence of the mouse. No matter the speed, incidence will never be greater than this value. |
 |`color`                  | String                  | `'#666'`                                                             | Solid color to fill the shape. |
+|`border`                 | String                  | `undefined`                                                          | Solid color to draw a border around the shape. |
+|`borderWidth`            | Int                     | `4`                                                                  | Width for border around the shape. |
 |`image`                  | String                  | `undefined`                                                          | Image URL to fill the shape. |
 |`imageCentroid`          | Boolean                 | `true`                                                               | If `true`, the image will be moved accordingly to the centroid point. |
 |`centroid`               | Element or String       | `undefined`                                                          | Element (or selector) to move accordingly to the centroid point. |
