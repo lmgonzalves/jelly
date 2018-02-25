@@ -85,6 +85,7 @@
     Jelly.prototype = {
         defaults: {
             pathsContainer: document,
+            borderWidth: 4,
             color: '#666',
             imageCentroid: true,
             debug: false,
@@ -414,6 +415,12 @@
                     } else {
                         this.ctx.fillStyle = o.color;
                         this.ctx.fill();
+
+                        if (o.border) {
+                          this.ctx.strokeStyle = o.border;
+                          this.ctx.lineWidth = o.borderWidth;
+                          this.ctx.stroke();
+                        }
                     }
                     this.ctx.restore();
                     if (o.debug) this.drawPoints(p, o);
