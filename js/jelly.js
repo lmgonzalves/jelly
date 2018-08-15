@@ -115,8 +115,7 @@
         initEvents: function () {
             var that = this;
 
-            this.canvas.onmousemove = function (e) {
-                e.preventDefault();
+            this.canvas.addEventListener('mousemove', function (e) {
                 var pos = that.canvas.getBoundingClientRect();
                 var x = e.clientX - pos.left;
                 var y = e.clientY - pos.top;
@@ -130,14 +129,13 @@
                 that.mouseX = x * (1 / scaleX);
                 that.mouseY = y * (1 / scaleY);
                 that.speed = dist ? dist / 10 : 0;
-            };
+            });
 
-            this.canvas.onmouseout = function (e) {
-                e.preventDefault();
+            this.canvas.addEventListener('mouseout', function (e) {
                 that.mouseX = undefined;
                 that.mouseY = undefined;
                 that.speed = undefined;
-            };
+            });
         },
 
         initOptions: function (options) {
